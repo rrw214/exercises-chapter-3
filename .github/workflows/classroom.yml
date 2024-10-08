@@ -120,6 +120,6 @@ jobs:
         EXERCISE-3-6-2_RESULTS: "${{steps.exercise-3-6-2.outputs.result}}"
         EXERCISE-3-6-3_RESULTS: "${{steps.exercise-3-6-3.outputs.result}}"
       with:
-        runners: exercise-3-3, exercise-3-4-1, exercise-3-4-2, exercise-3-4-3,
-          exercise-3-4-4, exercise-3-5, exercise-3-6-1, exercise-3-6-2,
-          exercise-3-6-3
+        runners: exercise-3-3, exercise-3-4-0, exercise-3-4-1, exercise-3-4-2,
+          exercise-3-4-3, exercise-3-4-4, exercise-3-5, exercise-3-6-1,
+          exercise-3-6-2, exercise-3-6-3
