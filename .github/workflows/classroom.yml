@@ -85,7 +85,7 @@ jobs:
       with:
         test-name: exercise-3-6-1
         setup-command: ''
-        command: "venv/bin/python -m pytest tests/test_exercise_3_4_1.py"
+        command: "venv/bin/python -m pytest tests/test_exercise_3_6_1.py"
         timeout: 1
         max-score: 1
     - name: exercise-3-6-2
@@ -94,7 +94,7 @@ jobs:
       with:
         test-name: exercise-3-6-2
         setup-command: ''
-        command: "venv/bin/python -m pytest tests/test_exercise_3_4_2.py"
+        command: "venv/bin/python -m pytest tests/test_exercise_3_6_2.py"
         timeout: 1
         max-score: 1
     - name: exercise-3-6-3
@@ -103,7 +103,7 @@ jobs:
       with:
         test-name: exercise-3-6-3
         setup-command: ''
-        command: "venv/bin/python -m pytest tests/test_exercise_3_4_3.py"
+        command: "venv/bin/python -m pytest tests/test_exercise_3_6_3.py"
         timeout: 1
         max-score: 1  
     - name: Autograding Reporter
