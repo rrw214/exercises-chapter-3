@@ -128,4 +128,20 @@ class Polynomial:
             total += b*x**a
         return total
     
+    def dx(self):
+        coefs = self.coefficients
 
+        if self == Polynomial((0,)):
+            return 0
+        if self.degree() == 0:
+            return Polynomial((0,))
+
+        dx_list = []
+        for degree, coefficient in enumerate(coefs[1:]):
+            new_coefs = (degree+1)*(coefficient)
+            dx_list.append(new_coefs)
+
+        return Polynomial(tuple(dx_list))
+
+def derivative(poly):
+    return poly.dx()
