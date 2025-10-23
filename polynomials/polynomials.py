@@ -67,7 +67,7 @@ class Polynomial:
         if isinstance(other,Polynomial):
             common = min(self.degree(), other.degree()) + 1
             coefs = tuple(a-b for a,b in zip(self.coefficients[:common], other.coefficients[:common]))
-            coefs += tuple(-x for x in self.coefficients[common:]) + tuple(-y for y in other.coefficients[common:])
+            coefs += tuple(x for x in self.coefficients[common:]) + tuple(-y for y in other.coefficients[common:])
             return Polynomial(coefs)
         else:
             return NotImplemented
