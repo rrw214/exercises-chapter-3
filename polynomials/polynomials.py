@@ -12,7 +12,7 @@ class Polynomial:
         if len(coefs_list) ==1 and coefs_list[0] ==0:
             coefs_list = [0]
         
-        self.coefficients = tuple(coefs_lsit)
+        self.coefficients = tuple(coefs_list)
 
 
     def degree(self):
@@ -117,8 +117,9 @@ class Polynomial:
             result = Polynomial((1,))
             for x in range(power):
                 result = result*self
-
-        return result
+            return result
+        else:
+            return NotImplemented
 
     def __call__(self, x):
         coefs = self.coefficients
